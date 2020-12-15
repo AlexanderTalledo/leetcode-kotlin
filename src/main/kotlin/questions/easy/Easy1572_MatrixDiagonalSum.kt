@@ -21,12 +21,9 @@ fun diagonalSum(mat: Array<IntArray>): Int {
     row = 0
     col = mat.size.minus(1)
     while (col >= 0) {
-        if (col == row) {
-            ++row
-            --col
-            continue
-        }
-        sum += mat[row++][col--]
+        if (col != row) sum += mat[row][col]
+        ++row
+        --col
     }
     return sum
 }
