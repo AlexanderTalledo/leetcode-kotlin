@@ -26,8 +26,8 @@ fun freqAlphabets(s: String): String {
     return sb.toString()
 }
 
-fun getAlphabetMap() = CharArray(26) { i -> 'a'.plus(i) }
+private fun getAlphabetMap() = CharArray(26) { i -> 'a'.plus(i) }
 
-fun getIndex(num: String) = Integer.parseInt(num).minus(1)
+private fun getIndex(num: String) = Integer.parseInt(num).minus(1)
 
 

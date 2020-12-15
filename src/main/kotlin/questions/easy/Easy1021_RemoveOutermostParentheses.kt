@@ -22,6 +22,6 @@ fun removeOuterParentheses(S: String): String {
     return sb.toString()
 }
 
-fun isOpenParentheses(c: Char) = c == '('
+private fun isOpenParentheses(c: Char) = c == '('
 
 

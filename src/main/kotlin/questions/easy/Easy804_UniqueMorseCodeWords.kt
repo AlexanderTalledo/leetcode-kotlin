@@ -19,7 +19,7 @@ fun uniqueMorseRepresentations(words: Array<String>): Int {
     return unique.size
 }
 
-fun getMorseCode(c: Char): String {
+private fun getMorseCode(c: Char): String {
     val morseMapping = arrayOf(
         ".-",
         "-...",
@@ -51,5 +51,5 @@ fun getMorseCode(c: Char): String {
     return morseMapping[getIndex(c)]
 }
 
-fun getIndex(c: Char) = c.minus('a')
+private fun getIndex(c: Char) = c.minus('a')
 

@@ -22,4 +22,4 @@ fun maxProduct(nums: IntArray): Int {
     return getProduct(max1, max2)
 }
 
-fun getProduct(num1: Int, num2: Int) = (num1.minus(1)).times(num2.minus(1))
+private fun getProduct(num1: Int, num2: Int) = (num1.minus(1)).times(num2.minus(1))
