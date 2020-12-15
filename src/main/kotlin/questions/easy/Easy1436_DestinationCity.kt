@@ -13,12 +13,12 @@ fun main() {
 // Space complexity: O(n), being n the number of paths
 fun destCity(paths: List<List<String>>): String {
     val origins = hashSetOf<String>()
-    for(path in paths) {
+    for (path in paths) {
         origins.add(path[0])
     }
-    for(path in paths) {
+    for (path in paths) {
         val destination = path[1]
-        if(!origins.contains(destination)) return destination
+        if (!origins.contains(destination)) return destination
     }
     return "-"
 }
